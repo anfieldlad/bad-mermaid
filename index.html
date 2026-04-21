@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bad Mermaid</title>
+    <link rel="icon" href="./favicon.svg?v=2" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero panel">
+        <p class="eyebrow">Bad Mermaid</p>
+        <h1>Mermaid in. Diagram out. Back again.</h1>
+        <p class="intro">
+          Write Mermaid, preview it, export it, and import exported files to recover the source.
+        </p>
+      </section>
+
+      <section class="workspace">
+        <div class="panel panel-editor">
+          <div class="panel-header">
+            <div>
+              <h2>Markdown</h2>
+              <p>Write Mermaid syntax and render the diagram.</p>
+            </div>
+          </div>
+
+          <label class="sr-only" for="mermaidInput">Mermaid markdown</label>
+          <textarea id="mermaidInput" spellcheck="false">flowchart TD
+    A[Start] --> B{Choose action}
+    B -->|Render| C[Preview diagram]
+    B -->|Download| D[Export SVG / PNG]
+    D --> E[Drop file back in]
+    E --> F[Source shows again]</textarea>
+
+          <div class="actions">
+            <button id="renderButton" class="button button-primary">Render Diagram</button>
+            <button id="copyButton" class="button">Copy Markdown</button>
+          </div>
+        </div>
+
+        <div class="panel panel-output">
+          <div class="panel-header">
+            <div>
+              <h2>Output</h2>
+              <p>Preview the diagram or adjust the supported visual flowchart.</p>
+            </div>
+            <label class="direction-control" for="directionSelect">
+              <span>Direction</span>
+              <select id="directionSelect">
+                <option value="TD">TD</option>
+                <option value="LR">LR</option>
+                <option value="BT">BT</option>
+                <option value="RL">RL</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="tab-bar" role="tablist" aria-label="Output views">
+            <button
+              id="visualTabButton"
+              class="tab-button is-active"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="visualPanel"
+            >
+              Visual Editor
+            </button>
+            <button
+              id="previewTabButton"
+              class="tab-button"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="previewPanel"
+            >
+              Preview
+            </button>
+          </div>
+
+          <div class="preview-card output-card">
+            <div
+              id="visualPanel"
+              class="output-panel"
+              role="tabpanel"
+              aria-labelledby="visualTabButton"
+            >
+              <div id="visualEditorHint" class="inline-helper helper-text">
+                Double-click a node to rename it.
+              </div>
+              <div id="visualEditor" class="diagram-preview diagram-empty">
+                A visual editor will appear here.
+              </div>
+            </div>
+            <div
+              id="previewPanel"
+              class="output-panel"
+              role="tabpanel"
+              aria-labelledby="previewTabButton"
+              hidden
+            >
+              <div id="diagramPreview" class="diagram-preview diagram-empty">
+                Your diagram will appear here.
+              </div>
+            </div>
+          </div>
+
+          <div class="output-footer">
+            <div id="previewActions" class="actions" hidden aria-hidden="true">
+              <button id="downloadSvgButton" class="button">Download SVG</button>
+              <button id="downloadPngButton" class="button">Download PNG</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="importPanel" class="import-panel panel">
+        <div class="panel-header">
+          <div>
+            <h2>Import</h2>
+            <p>Drop an exported <code>SVG</code> or <code>PNG</code> to restore Mermaid source.</p>
+          </div>
+        </div>
+
+        <label id="dropzone" class="dropzone" for="fileInput">
+          <input
+            id="fileInput"
+            type="file"
+            accept=".svg,.png,image/svg+xml,image/png"
+          />
+          <span class="dropzone-title">Drop a file here</span>
+          <span class="dropzone-subtitle">
+            Source recovery works for files exported from this app.
+          </span>
+        </label>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>
+        &copy; <span id="copyrightYear"></span> Built by
+        <a href="https://badai.tech" target="_blank" rel="noreferrer">BAD AI</a>.
+      </p>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
