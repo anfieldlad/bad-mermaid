@@ -21,7 +21,7 @@ Bad Mermaid is a small browser-based Mermaid workspace for writing diagrams, pre
 The app is a static site, so the simplest way to run it locally is with a basic HTTP server:
 
 ```bash
-cd /Users/bobby/bad-mermaid
+cd bad-mermaid
 python3 -m http.server 8080
 ```
 
