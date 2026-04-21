@@ -2,7 +2,7 @@
 
 Bad Mermaid is a small browser-based Mermaid workspace for writing diagrams, previewing them, exporting them, and restoring the original Mermaid source from exported files.
 
-![Bad Mermaid screenshot](./assets/bad-mermaid-screenshot.png)
+![Bad Mermaid screenshot](./assets/bad-mermaid-preview.svg)
 
 ## Features
 
