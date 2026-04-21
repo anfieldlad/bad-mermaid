@@ -37,3 +37,7 @@ http://localhost:8080
 - CSS
 - Vanilla JavaScript
 - Mermaid
+
+## Deployment
+
+- [Deploy to Vercel](./DEPLOY_VERCEL.md)
