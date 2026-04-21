@@ -2,6 +2,8 @@
 
 Bad Mermaid is a small browser-based Mermaid workspace for writing diagrams, previewing them, exporting them, and restoring the original Mermaid source from exported files.
 
+![Bad Mermaid screenshot](./assets/bad-mermaid-screenshot.png)
+
 ## Features
 
 - Write Mermaid flowchart syntax in a text editor
@@ -9,6 +11,10 @@ Bad Mermaid is a small browser-based Mermaid workspace for writing diagrams, pre
 - Switch between a rendered preview and a lightweight visual editor for supported flowcharts
 - Export diagrams as `SVG` or `PNG`
 - Re-import exported `SVG` or `PNG` files to recover the embedded Mermaid source
+
+## Deployment
+
+- [Deploy to Vercel](./DEPLOY_VERCEL.md)
 
 ## Notes
 
@@ -38,6 +44,6 @@ http://localhost:8080
 - Vanilla JavaScript
 - Mermaid
 
-## Deployment
+## License
 
-- [Deploy to Vercel](./DEPLOY_VERCEL.md)
+MIT
