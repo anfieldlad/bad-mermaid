@@ -34,6 +34,8 @@ Agents working here should keep changes small, browser-safe, and dependency-ligh
 - Favor targeted changes over broad refactors.
 - Maintain current formatting/style unless the file already needs localized cleanup.
 - Avoid adding dependencies for problems that can be solved with existing browser APIs.
+- When publishing to GitHub from this repo, use the SSH remote form (`git@github.com:anfieldlad/bad-mermaid.git`) rather than HTTPS.
+- If `origin` is not using SSH, switch it before pushing so agent-driven publishes follow the configured SSH workflow on this machine.
 
 ## Change Guidance
 
