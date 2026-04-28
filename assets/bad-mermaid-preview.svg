@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Bad Mermaid app preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4f8fc" />
+      <stop offset="100%" stop-color="#dfeef8" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2f7ec7" />
+      <stop offset="100%" stop-color="#1fbea8" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#183247" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)" />
+  <circle cx="1120" cy="100" r="170" fill="#d7eef9" opacity="0.65" />
+  <circle cx="180" cy="640" r="210" fill="#e7f5fb" opacity="0.85" />
+
+  <g filter="url(#shadow)">
+    <rect x="72" y="52" width="1136" height="616" rx="28" fill="#ffffff" />
+  </g>
+
+  <rect x="72" y="52" width="1136" height="76" rx="28" fill="#f8fbfe" />
+  <rect x="72" y="100" width="1136" height="1" fill="#e5eef5" />
+
+  <circle cx="116" cy="90" r="8" fill="#ff7f66" />
+  <circle cx="142" cy="90" r="8" fill="#ffca57" />
+  <circle cx="168" cy="90" r="8" fill="#31d07f" />
+
+  <text x="216" y="97" fill="#547186" font-size="24" font-family="Segoe UI, Arial, sans-serif">Bad Mermaid</text>
+
+  <rect x="110" y="168" width="320" height="448" rx="24" fill="#f8fbfd" stroke="#e1edf4" />
+  <text x="138" y="210" fill="#1b2f3d" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Markdown</text>
+  <rect x="138" y="236" width="264" height="1" fill="#dde9f1" />
+
+  <g fill="#4f6d81" font-size="19" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+    <text x="140" y="286">flowchart LR</text>
+    <text x="140" y="324">  A[Idea] --&gt; B[Draft]</text>
+    <text x="140" y="362">  B --&gt; C[Review]</text>
+    <text x="140" y="400">  C --&gt; D[Publish]</text>
+    <text x="140" y="438">  D --&gt; E[Import Again]</text>
+  </g>
+
+  <rect x="470" y="168" width="688" height="448" rx="24" fill="#fbfdff" stroke="#e1edf4" />
+  <text x="500" y="210" fill="#1b2f3d" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Preview</text>
+  <text x="500" y="244" fill="#648196" font-size="18" font-family="Segoe UI, Arial, sans-serif">Write Mermaid. Preview instantly. Recover source from export.</text>
+
+  <g transform="translate(540 308)">
+    <rect x="-82" y="-34" width="164" height="68" rx="20" fill="#eef6fc" stroke="#2f7ec7" stroke-width="3" />
+    <text x="0" y="10" text-anchor="middle" fill="#1b5d99" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Idea</text>
+
+    <rect x="172" y="-34" width="164" height="68" rx="20" fill="#eef8f7" stroke="#1fbea8" stroke-width="3" />
+    <text x="254" y="10" text-anchor="middle" fill="#178776" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Draft</text>
+
+    <rect x="172" y="126" width="164" height="68" rx="20" fill="#eef6fc" stroke="#2f7ec7" stroke-width="3" />
+    <text x="254" y="170" text-anchor="middle" fill="#1b5d99" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Review</text>
+
+    <rect x="-82" y="126" width="164" height="68" rx="20" fill="#eef8f7" stroke="#1fbea8" stroke-width="3" />
+    <text x="0" y="170" text-anchor="middle" fill="#178776" font-size="24" font-weight="700" font-family="Segoe UI, Arial, sans-serif">Publish</text>
+
+    <path d="M82 0h70" fill="none" stroke="#3670aa" stroke-width="5" stroke-linecap="round" />
+    <path d="M144 -12l22 12-22 12" fill="none" stroke="#3670aa" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <path d="M254 34v58" fill="none" stroke="#3670aa" stroke-width="5" stroke-linecap="round" />
+    <path d="M242 82l12 22 12-22" fill="none" stroke="#3670aa" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <path d="M172 160H102" fill="none" stroke="#3670aa" stroke-width="5" stroke-linecap="round" />
+    <path d="M110 148l-22 12 22 12" fill="none" stroke="#3670aa" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <rect x="500" y="560" width="260" height="22" rx="11" fill="url(#accent)" opacity="0.2" />
+  <rect x="500" y="560" width="170" height="22" rx="11" fill="url(#accent)" />
+  <text x="782" y="577" fill="#648196" font-size="16" font-family="Segoe UI, Arial, sans-serif">Visual editor supports supported flowcharts</text>
+</svg>
